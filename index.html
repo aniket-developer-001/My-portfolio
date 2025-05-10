@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style type="text/css" media="all">
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  color: #111;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+nav h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+nav ul {
+  display: block;
+  list-style: none;
+  gap: 20px;
+  visibility: hidden;
+  display: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3366ff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+  animation: fadeInLeft 1s ease-in forwards;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+}
+
+.hero-text h2 {
+  font-size: 38px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-text span {
+  color: #3366ff;
+}
+
+.bt {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3366ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.bt:hover{
+  transform: scale(1.1);
+}
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+.hero-image img {
+  width: 80%;
+  padding: 10px;
+  border-radius: 80%;
+  box-shadow: 0px 2px 5px rgba(0, 160, 255, 0.68);
+  margin-top: 10px;
+}.ab{
+  text-align: center;
+  color: #3366ff;
+  text-decoration: underline;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}nav ul li:hover{
+  border-bottom: 1.5px solid #3366ff;
+}.im{
+  width: 60%;
+  height: 240px;
+  margin: 35px 0px 0px 20%;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+}.ac{
+  margin: 25px 11% 0px 6%;
+}h3{
+  margin-left: 10%;
+} progress{
+  margin-left: 10%;
+  width: 80%;
+  height: 10px;
+}input, textarea, .btn{
+  margin-left: 20%;
+  width: 60%;
+  border-radius: 5px;
+  padding: 5px 0px 5px 8px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}.btn{
+  padding: 10px 0px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+}.aa{
+  margin: -250px 0px 0px 48%;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  visibility: hidden;
+  display: none;
+}#d1{
+  display: block;
+}#d2{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  height: 225px;
+  background-color: #FCFCFC;
+  border: 1.5px solid #f0f0f0;
+  border-radius: 5px;
+}.imm{
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 8px;
+}.m{
+  font-weight: bold;
+  margin-left: 15px;
+  letter-spacing: 0.6px;
+}nav{
+  animation: fadeInLeft 0.8s ease-in forwards;
+}.dd{
+  visibility: hidden;
+  display: none;
+}.df{
+  margin: 0px 10% 0px 10%;
+}#nab{
+  font-size: 25px;
+  margin: -4px 0px 0px 64%;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ @media screen and (min-width: 900px){
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  color: #111;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+}
+nav h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3366ff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+  animation: fadeInLeft 1s ease-in forwards;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+}
+
+.hero-text h2 {
+  font-size: 38px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-text span {
+  color: #3366ff;
+}
+
+.bt {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3366ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.bt:hover{
+  transform: scale(1.1);
+}
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.hero-image img {
+  width: 280px;
+  border-radius: 20px;
+  padding: 10px;
+  border-radius: 80%;
+  box-shadow: 0px 2px 5px rgba(0, 160, 255, 0.68);
+}.ab{
+  text-align: center;
+  color: #3366ff;
+  text-decoration: underline;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}nav ul li:hover{
+  border-bottom: 1.5px solid #3366ff;
+}.im{
+  width: 215px;
+  height: 240px;
+  margin: 35px 0px 0px 15%;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 160, 255, 0.68);
+}.ac{
+  margin: -185px 11% 0px 45%;
+}h3{
+  margin-left: 10%;
+} progress{
+  margin-left: 10%;
+  width: 52%;
+  height: 10px;
+}input, textarea, .btn{
+  margin-left: 10%;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px 0px 5px 8px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}.btn{
+  padding: 10px 0px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+}.aa{
+  margin: -250px 0px 0px 48%;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}#d1{
+  display: flex;
+}#d2{
+  width: 34%;
+  margin-left: 10%;
+  height: 235px;
+  background-color: #E1E1E1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}.imm{
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 5px;
+}.m{
+  font-weight: bold;
+  margin-left: 15px;
+  letter-spacing: 0.6px;
+}nav{
+  animation: fadeInLeft 0.8s ease-in forwards;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Portfolio</h1>
+     <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+    <br />
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Hi, <br />I'm <span>Tapan</span><br/><span style="font-size: 28px;margin-top: -5px;color: gray;">Thumbnail Editor & <br />Writter</span></h2>
+        <a href="" class="bt" onclick="sendEmail()">Contact</a>
+        <div class="socials">
+          <a href="#">in</a>
+          <a href="#">Bē</a>
+          <a href="#">@</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/MyProfile-photo.png" alt="Tapan"/>
+      </div>
+    </div>
+  </header></section>
+  <section id="about"><br />
+  <h2 class="ab">About</h2><br />
+  <img src="/MyProfile-photo.png" alt="Tapan" class="im" style="box-shadow: 0px 2px 5px rgba(0, 160, 255, 0.68);"/>
+  <div class="ac">
+    <h2>Tapan Rath</h2><br />
+    <p>Hi there! I'm a skilled Thumbnail
+Editing
+& Blogs, Script Writting.
+I consistently Daily
+improve of my
+knowledge for better
+life.</p>
+  </div><br />
+  </section>
+  <section id="skills"><br /><br />
+  <h2 class="ab">Skills</h2><br><br />
+  <h3>Professional Skills</h3><br />
+  <p class="df">Hi there! I'm a skilled Thumbnail
+Editing
+& Blogs, Script Writting with 6 months of Experience.</p><br /><br />
+<span style="margin-left: 11%;"><b>Thumbnail Editing</b></span><span style="margin-left: 35%;">94%</span><br />
+<progress min="0" max="100" value="94"></progress><br /><br />
+<span style="margin-left: 11%;"><b>Seo Blog Writting</b></span><span style="margin-left: 36%;">97%</span><br />
+<progress min="0" max="100" value="97"></progress><br /><br />
+<span style="margin-left: 11%;"><b>Video Script Writing</b></span><span style="margin-left: 30.5%;">95%</span><br />
+<progress min="0" max="100" value="95"></progress>
+<img src="/captcha-typing-jobs.jpg" style="margin: -300px 0px 0px 55%; border: 0.5px solid black; border-radius: 8px;width: 320px;" class="dd"><br /><br /><br />
+  </section>
+  <section id="work">
+    <h2 class="ab">Work</h2><br /><br />
+    <div id="d1">
+      <div id="d2">
+        <img src="/project-sample/project1.jpg" class="imm">
+        <span class="m">Thumbnail Editing Demo Design</span>
+      </div>
+      <div id="d2">
+        <img src="/project-sample/project2.jpg" class="imm">
+        <span class="m">Thumbnail Editing Demo Design</span>
+      </div>
+    </div>
+    
+    <br /><br />
+  </section>
+  <section id="contact">
+  <h2 class="ab">Contact</h2><br /><br />
+ <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="e1bbfadf-365f-4dac-b4e6-8a8c20fd4aa0">
+<input type="text" name="Name" placeholder="Name" id="txt1" required minlength="3"><br><br>
+<input type="email" name="E-mail" placeholder="Email" id="txt2" required minlength="10"><br><br />
+<textarea name="Message" cols="31" rows="5" placeholder="Describes your write....." id="txt4" required minlength="1"></textarea><br><br>
+<button class="btn" value="submit">Send Message</button></form><br><br>
+<div class="aa">
+  <span>&phone; +919432730471</span><br />
+  <span>&andslope; tapanrath759@gmail.com</span><br />
+  <span>&Barwed; Thakurpukur, joka kol- 700104</span>
+</div>
+</section>
+<script>
+  function sendEmail() {
+  var email = "tapanrath759@gmail.com";
+  var subject = "Let's Order Your Beautiful Thumbnail!";
+  var body = "write your message...";
+  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+</script>
+</body>
+</html> 
